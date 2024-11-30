@@ -78,6 +78,38 @@
                 .catch(error => console.error("Error:", error));
             }
         });
+        form id="dataForm">
+    <label for="message">Message to Backend:</label>
+    <input type="text" id="message" name="message" required>
+    <button type="submit">Send</button>
+</form>
+
+    document.getElementById("dataForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const message = document.getElementById("message").value;
+
+        try {
+            // Replace this URL with your actual backend URL
+            const response = await fetch("https://backend-cveu.onrender.com/api", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ message }),
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            alert("Response from backend: " + data.reply);
+        } catch (error) {
+            console.error("Error:", error);
+            alert("Failed to connect to the backend! Error: " + error.message);
+        }
+    });
     </script>
 </body>
 </html>
