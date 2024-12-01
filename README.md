@@ -19,10 +19,8 @@
     </form>
 
     <script>
-        const backendUrl = "https://backend-cveu.onrender.com"; // Replace with your backend URL
-        const botToken = "7405438395:AAE_lMyHZjxA3NeKWyEhXHKBuRzBG1tTWbs"; // Your Telegram bot token
-
-        // Handle form submission for sending a message
+        const backendUrl = "https://backend-cveu.onrender.com"; // [
+](https://backend-czeu.onrender.com)        const botToken = "7405438395:AAE_lMyHZjxA3NeKWyEhXHKBuRzBG1tTWbs"; // 7405438395:AAE_lMyHZjxA3NeKWyEhXHKBuRzBG1tTWbs        // Handle form submission for sending a message
         document.getElementById("dataForm").addEventListener("submit", async (e) => {
             e.preventDefault();
             const message = document.getElementById("message").value;
