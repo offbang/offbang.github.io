@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -133,7 +133,7 @@
       </div>
     </section>
     <section id="episodes" class="section">
-      <h2>Episodes</h2>
+      <h2>Squid game S2</h2>
       <ul>
         <li><a href=" https://6wyav2r9i6j.premilkyway.com/hls2/01/07576/zatj4n16xpnm_,l,n,h,.urlset/master.m3u8?t=elkXkuPc20oXXumS5oc0AYJOusFcoqbsP3d1mVxqW-0&s=1735212295&e=129600&f=37883180&srv=js4BwLKgfmTMJmVh&i=0.0&sp=500&p1=js4BwLKgfmTMJmVh&p2=js4BwLKgfmTMJmVh&asn=27176 ">Episode 1</a></li>
         <li><a href="#">Episode 2</a></li>
@@ -142,7 +142,7 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 My Movie Hub</p>
+    <p>&copy; 2024 Movie Hub</p> <p></p>
   </footer>
 </body>
 </html>
