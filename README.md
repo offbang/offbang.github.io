@@ -126,7 +126,7 @@
       <h2>Shows</h2>
       <div class="grid">
         <div class="card">
-          <img src="https://via.placeholder.com/200x300" alt="Show 1">
+          <img src="https://static.wikia.nocookie.net/shipping/images/1/14/Squid_Game_promotional_poster.jpg/revision/latest?cb=20211022040624)">
           <h3>Squid game</h3>
           <p><a href="#">Watch Now</a></p>
         </div>
@@ -135,7 +135,7 @@
     <section id="episodes" class="section">
       <h2>Episodes</h2>
       <ul>
-        <li><a href="[(https://6wyav2r9i6j.premilkyway.com/hls2/01/07576/zatj4n16xpnm_,l,n,h,.urlset/master.m3u8?t=elkXkuPc20oXXumS5oc0AYJOusFcoqbsP3d1mVxqW-0&s=1735212295&e=129600&f=37883180&srv=js4BwLKgfmTMJmVh&i=0.0&sp=500&p1=js4BwLKgfmTMJmVh&p2=js4BwLKgfmTMJmVh&asn=27176)]>Episode 1</a></li>
+        <li><a href="https://6wyav2r9i6j.premilkyway.com/hls2/01/07576/zatj4n16xpnm_,l,n,h,.urlset/master.m3u8?t=elkXkuPc20oXXumS5oc0AYJOusFcoqbsP3d1mVxqW-0&s=1735212295&e=129600&f=37883180&srv=js4BwLKgfmTMJmVh&i=0.0&sp=500&p1=js4BwLKgfmTMJmVh&p2=js4BwLKgfmTMJmVh&asn=27176">Episode 1</a></li>
         <li><a href="#">Episode 2</a></li>
         <li><a href="#">Episode 3</a></li>
       </ul>
