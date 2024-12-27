@@ -96,7 +96,8 @@
       color: #aaa;
     }
   </style>
-  <!-- Google tag (gtag.js) -->
+</head>
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFRB0QN34P"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -105,7 +106,6 @@
 
   gtag('config', 'G-XFRB0QN34P');
 </script>
-</head>
 <body>
   <header>
     <h1>My Movie Hub</h1>
