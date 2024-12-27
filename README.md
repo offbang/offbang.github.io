@@ -149,7 +149,19 @@
     <p>&copy; 2024 Movie Hub</p> <p><div class="card">
 
   <a href="https://instagram.com/officialmrbea" class="instagram" target="_blank">Follow on Instagram</a>
-</div></p>
+</div> <style>
+  .instagram {
+    margin-top: 10px;
+    display: block;
+    color: #e50914;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .instagram:hover {
+    text-decoration: underline;
+  }
+</style></p>
   </footer>
 </body>
 </html>
