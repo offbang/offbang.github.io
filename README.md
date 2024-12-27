@@ -146,7 +146,10 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Movie Hub</p> <p></p>
+    <p>&copy; 2024 Movie Hub</p> <p><div class="card">
+
+  <a href="https://instagram.com/officialmrbea" class="instagram" target="_blank">Follow on Instagram</a>
+</div></p>
   </footer>
 </body>
 </html>
