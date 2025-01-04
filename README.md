@@ -126,8 +126,9 @@
         </div>
         <div class="card">
           <img src="https://via.placeholder.com/200x300" alt="Movie 2">
-          <h3>Coming soon</h3>
-          <p><a href="#">Watch Now</a></p>
+          <h3>hotel rwanda</h3>
+       <p><a href="https://tralvoxmoon.xyz/file2/0vhJV1DEAZTsYB+64jnS~gxwEVewI8GOXXfzGVYeaVkTptSp343LCeg7Lf~Vuk5m+ro2KgJpNBqRJPKHyuu+h42F+elPOaC3K3kD6KVDT5S2HYHyOnMoTYMguE0GRcfU2R86ShQrckPgSlxPXD~k~HglEaEPpkwPIN1bYOBr~Eg=/cGxheWxpc3QubTN1OA==.m3u8">Watch Now</a></p>
+          <p><a href="">Watch Now</a></p>
         </div>
       </div>
     </section>
