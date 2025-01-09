@@ -145,7 +145,7 @@
     <section id="episodes" class="section">
       <h2>Squid game S2</h2>
       <ul>
-        <li><a href=" https://6wyav2r9i6j.premilkyway.com/hls2/01/07576/zatj4n16xpnm_,l,n,h,.urlset/master.m3u8?t=elkXkuPc20oXXumS5oc0AYJOusFcoqbsP3d1mVxqW-0&s=1735212295&e=129600&f=37883180&srv=js4BwLKgfmTMJmVh&i=0.0&sp=500&p1=js4BwLKgfmTMJmVh&p2=js4BwLKgfmTMJmVh&asn=27176 ">Episode 1</a></li>
+        <li><a href="https://6wyav2r9i6j.premilkyway.com/hls2/01/07576/zatj4n16xpnm_,l,n,h,.urlset/master.m3u8?t=elkXkuPc20oXXumS5oc0AYJOusFcoqbsP3d1mVxqW">Episode 1</a></li>
         <li><a href="https://uicdn.cloud/local/0/e2131244311814d364536b58a9674402/master.m3u8">Episode 2</a></li>
         <li><a href="https://uicdn.cloud/local/0/e5df7f62103c2cfd25ad24a59ee3868e/master.m3u8">Episode 3</a></li>
         <li><a href="https://streamcdn.cloud/local/0/e5df7f62103c2cfd25ad24a59ee3868e/master.m3u8">Episode 4</a></li>
