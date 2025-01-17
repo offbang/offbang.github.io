@@ -126,8 +126,8 @@
         </div>
         <div class="card">
           <img src="https://via.placeholder.com/200x300" alt="Movie 2">
-          <h3>hotel rwanda</h3>
-       <p><a href="https://tralvoxmoon.xyz/file2/0vhJV1DEAZTsYB+64jnS~gxwEVewI8GOXXfzGVYeaVkTptSp343LCeg7Lf~Vuk5m+ro2KgJpNBqRJPKHyuu+h42F+elPOaC3K3kD6KVDT5S2HYHyOnMoTYMguE0GRcfU2R86ShQrckPgSlxPXD~k~HglEaEPpkwPIN1bYOBr~Eg=/cGxheWxpc3QubTN1OA==.m3u8">Watch Now</a></p>
+          <h3>Beast games e6 </h3>
+       <p><a href="https://x8oi6owwkjoewr.premilkyway.com/hls2/01/08024/8rfukfrv29jy_,l,n,h,.urlset/master.m3u8?t=-aPWbr-6x4Bampw0Hs2PBaXcg0LejdZF9tb3omKlJLk&s=1737107524&e=129600&f=40121911&srv=z13jtbat10fa85i&i=0.4&sp=500&p1=z13jtbat10fa85i&p2=z13jtbat10fa85i&asn=37075">Watch Now</a></p>
           <p><a href="">Watch Now</a></p>
         </div>
       </div>
