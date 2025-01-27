@@ -157,7 +157,7 @@
   <footer>
     <p>&copy; 2024 Movie Hub</p> <p><div class="card">
 
-  <a href="https://instagram.com/officialmrbea" class="instagram" target="_blank">Follow on Instagram</a>
+  <a href="https://instagram.com/offbang.sk" class="instagram" target="_blank">Follow on Instagram</a>
 </div></p> <style>
   .instagram {
     margin-top: 10px;
