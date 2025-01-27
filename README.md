@@ -126,9 +126,8 @@
         </div>
         <div class="card">
           <img src="https://via.placeholder.com/200x300" alt="Movie 2">
-          <h3>camp x-ray</h3>
-       <p><a href="https://m3u8.wafflehacker.io/m3u8-proxy?url=https%3A%2F%2Fsedrfmwrpjxatem5.premilkyway.com%2Fhls2%2F01%2F00378%2Fttcrg2y94i02_h%2Fmaster.m3u8%3Ft%3Dfewopy-BQGjBgPgOyeUyNKG9fE8DhrXKGRZp2O3WWgE%26s%3D1737852570%26e%3D129600%26f%3D1891118%26srv%3Dg3qezmygwi76p%26i%3D0.4%26sp%3D500%26p1%3Dg3qezmygwi76p%26p2%3Dg3qezmygwi76p%26asn%3D27176">Watch Now</a></p>
-          <p><a href="">Watch Now</a></p>
+          <h3>beast games</h3>
+       <p><a href="https://cyyroro04xrqr.premilkyway.com/hls2/01/08168/r21qgcsg5rem_,l,n,h,.urlset/master.m3u8?t=RvQMIdgcWDeMADExIUa7x1G0FnK4kByX4snn6IrlRXw&s=1737975157&e=129600&f=40844871&srv=3FjgDmcnea8S35m&i=0.4&sp=500&p1=3FjgDmcnea8S35m&p2=3FjgDmcnea8S35m&asn=37075">Watch Now</a></p>
         </div>
       </div>
     </section>
