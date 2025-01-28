@@ -1,9 +1,13 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Movie Hub - Watch the latest movies and shows online.">
+  <meta name="keywords" content="movies, shows, streaming, watch online">
+  <meta name="author" content="Your Name">
   <title>My Movie Hub</title>
+  <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
   <style>
     /* Basic reset */
     * {
@@ -14,7 +18,7 @@
 
     /* Body styling */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
       background-color: #141414;
       color: white;
       line-height: 1.6;
@@ -22,14 +26,20 @@
 
     /* Header styling */
     header {
-      background-color: #e50914;
-      color: white;
+      background-color: #141414;
       padding: 1rem 2rem;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
+      color: #e50914;
     }
 
     header nav a {
@@ -40,7 +50,44 @@
     }
 
     header nav a:hover {
-      text-decoration: underline;
+      color: #e50914;
+    }
+
+    /* Hero section */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x500');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 60px; /* Offset for fixed header */
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background-color: #e50914;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .hero button:hover {
+      background-color: #f40612;
     }
 
     /* Section styling */
@@ -56,8 +103,22 @@
     /* Grid layout for cards */
     .grid {
       display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
+      gap: 1rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+    }
+
+    .grid::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .grid::-webkit-scrollbar-thumb {
+      background: #e50914;
+      border-radius: 4px;
+    }
+
+    .grid::-webkit-scrollbar-track {
+      background: #333;
     }
 
     .card {
@@ -66,6 +127,13 @@
       border-radius: 8px;
       text-align: center;
       width: 200px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+      z-index: 10;
     }
 
     .card img {
@@ -95,83 +163,83 @@
       background-color: #222;
       color: #aaa;
     }
+
+    footer a {
+      color: #e50914;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      .card {
+        width: 150px;
+      }
+    }
   </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XFRB0QN34P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XFRB0QN34P');
-</script>
 <body>
   <header>
     <h1>My Movie Hub</h1>
     <nav>
       <a href="#movies">Movies</a>
       <a href="#shows">Shows</a>
-  
     </nav>
   </header>
+
+  <div class="hero">
+    <div>
+      <h2>Welcome to My Movie Hub</h2>
+      <p>Watch the latest movies and shows anytime, anywhere.</p>
+      <button>Get Started</button>
+    </div>
+  </div>
+
   <main>
     <section id="movies" class="section">
       <h2>Movies</h2>
       <div class="grid">
         <div class="card">
           <img src="https://via.placeholder.com/200x300" alt="Movie 1">
-          <h3>coming soon</h3>
+          <h3>Coming Soon</h3>
           <p><a href="#">Watch Now</a></p>
         </div>
         <div class="card">
           <img src="https://via.placeholder.com/200x300" alt="Movie 2">
-          <h3>beast games</h3>
-       <p><a href="https://cyyroro04xrqr.premilkyway.com/hls2/01/08168/r21qgcsg5rem_,l,n,h,.urlset/master.m3u8?t=RvQMIdgcWDeMADExIUa7x1G0FnK4kByX4snn6IrlRXw&s=1737975157&e=129600&f=40844871&srv=3FjgDmcnea8S35m&i=0.4&sp=500&p1=3FjgDmcnea8S35m&p2=3FjgDmcnea8S35m&asn=37075">Watch Now</a></p>
+          <h3>Beast Games</h3>
+          <p><a href="#">Watch Now</a></p>
         </div>
+        <!-- Add more movie cards -->
       </div>
     </section>
+
     <section id="shows" class="section">
       <h2>Shows</h2>
       <div class="grid">
         <div class="card">
-          <img src="https://static.wikia.nocookie.net/shipping/images/1/14/Squid_Game_promotional_poster.jpg/revision/latest?cb=20211022040624)">
-          <h3>Squid game</h3>
+          <img src="https://static.wikia.nocookie.net/shipping/images/1/14/Squid_Game_promotional_poster.jpg/revision/latest?cb=20211022040624" alt="Squid Game">
+          <h3>Squid Game</h3>
           <p><a href="#">Watch Now</a></p>
         </div>
+        <!-- Add more show cards -->
       </div>
     </section>
-    <section id="episodes" class="section">
-      <h2>Squid game S2</h2>
-      <ul>
-        <li><a href="https://6wyav2r9i6j.premilkyway.com/hls2/01/07576/zatj4n16xpnm_,l,n,h,.urlset/master.m3u8?t=elkXkuPc20oXXumS5oc0AYJOusFcoqbsP3d1mVxqW">Episode 1</a></li>
-        <li><a href="https://uicdn.cloud/local/0/e2131244311814d364536b58a9674402/master.m3u8">Episode 2</a></li>
-        <li><a href="https://uicdn.cloud/local/0/e5df7f62103c2cfd25ad24a59ee3868e/master.m3u8">Episode 3</a></li>
-        <li><a href="https://streamcdn.cloud/local/0/e5df7f62103c2cfd25ad24a59ee3868e/master.m3u8">Episode 4</a></li>
-        <li><a href="https://uzcdn.cloud/local/0/0ac3db05d627d442a4cfc9f2baa65b93/master.m3u8">Episode 5</a></li>
-        <li><a href="https://uncdn.cloud/local/0/9a9cb156762fd3141ea60ed1fbc2375d/master.m3u8">Episode 6</a></li>
-        <li><a href="https://uicdn.cloud/local/0/e5e421d49e5e376d678ac597f1852731/master.m3u8">Episode 7</a></li>  
-      </ul>
-    </section>
   </main>
+
   <footer>
-    <p>&copy; 2024 Movie Hub</p> <p><div class="card">
-
-  <a href="https://instagram.com/offbang.sk" class="instagram" target="_blank">Follow on Instagram</a>
-</div></p> <style>
-  .instagram {
-    margin-top: 10px;
-    display: block;
-    color: #e50914;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-
-  .instagram:hover {
-    text-decoration: underline;
-  }
-</style>
-
+    <p>&copy; 2024 Movie Hub</p>
+    <a href="https://instagram.com/offbang.sk" target="_blank">Follow on Instagram</a>
   </footer>
 </body>
 </html>
