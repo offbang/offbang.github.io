@@ -218,7 +218,7 @@
         <div class="card">
           <img src="https://via.placeholder.com/200x300" alt="Movie 2">
           <h3>Beast Games</h3>
-          <p><a href="https://i-cdn-0.vino332gptk.com/stream2/i-cdn-0/a992af17d36b4ea9531c436ab6fa3dd8/MJTMsp1RshGTygnMNRUR2N2MSlnWXZEdMNDZzQWe5MDZzMmdZJTO1R2RWVHZDljekhkSsl1VwYnWtx2cihVT25ERolWW6ZVaPRkQt5UbZRTWqdWNOpXQ45EVNRjT6lFNaRkTqpFVjdnWU1UP:1738321468:94.232.244.159:4333a073ef3743a0df16454d5c3d99a6521db533a830c9cf4489b6f83b392009/index.m3u8">Watch Now</a></p>
+          <p><a href="https://cyyroro04xrqr.premilkyway.com/hls2/01/08240/19227vmkbyct_,l,n,h,.urlset/master.m3u8?t=4tCr0tjsYOLlr2EiLfWpjbNs3EpL1dFncFyihH8jIRE&s=1738327744&e=129600&f=41203938&srv=js4BwLKgfmTMJmVh&i=0.4&sp=500&p1=js4BwLKgfmTMJmVh&p2=js4BwLKgfmTMJmVh&asn=37075">Watch Now</a></p>
         </div>
         <!-- Add more movie cards -->
       </div>
