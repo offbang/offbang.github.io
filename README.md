@@ -229,8 +229,8 @@
       <div class="grid">
         <div class="card">
           <img src="https://static.wikia.nocookie.net/shipping/images/1/14/Squid_Game_promotional_poster.jpg/revision/latest?cb=20211022040624" alt="Squid Game">
-          <h3>Squid Game</h3>
-          <p><a href="#">Watch Now</a></p>
+          <h3>beast games 9 </h3>
+          <p><a href="https://cv9fqnu812v.premilkyway.com/hls2/01/08283/qnzbr7rm0ee6_,l,n,.urlset/master.m3u8?t=TYUWqRFZlt1JHBzwb8wwljhRqBXjeytSMae05hZ-vw4&s=1738929184&e=129600&f=41417796&srv=aB091Tg50YGN&i=0.4&sp=500&p1=aB091Tg50YGN&p2=aB091Tg50YGN&asn=37075">Watch Now</a></p>
         </div>
         <!-- Add more show cards -->
       </div>
